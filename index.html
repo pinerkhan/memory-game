@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>6 задание</title>
+	<style>
+		.box1 {
+			background-image: url(1610811089_1-p-fon-iz-spanch-boba-1.jpg);
+			background-size: 100% 100%;
+			height: 1050px;
+		}
+		.box2 {
+			background-image: url(scale_1200.jpg);
+			background-size: 100% 100%;
+			height:300px;
+			width:450px;
+			left:200px;
+			top:300px;
+			position:absolute;
+			transition: 1s;
+		}
+		.box3 {
+			background-image: url(kartinki-skvidvard-40.jpg);
+			background-size: 100% 100%;
+			height:300px;
+			width:450px;
+			left:700px;
+			top:300px;
+			position: absolute;
+			transition: 1s;
+		}
+		.box4 {
+			background-image: url(kartinki-patrika-17.jpg);
+			background-size: 100% 100%;
+			height:300px;
+			width:450px;
+			left:1200px;
+			top:300px;
+			position: absolute;
+			transition: 1s;
+		}
+		.box5 {
+			background-image: url(12-18.jpg);
+			background-size: 100% 100%;
+			height:300px;
+			width:450px;
+			left:200px;
+			top:700px;
+			position: absolute;
+			transition: 1s;
+		}
+		.box6 {
+			background-image: url(S1200.png);
+			background-size: 100% 100%;
+			height:300px;
+			width:450px;
+			left:700px;
+			top:700px;
+			position: absolute;
+			transition: 1s;
+		}
+		.box7 {
+			background-image: url(4a58bdc9b08e.jpg);
+			background-size: 100% 100%;
+			height:300px;
+			width:450px;
+			left:1200px;
+			top:700px;
+			position: absolute;
+			transition: 1s;
+		}
+		.h1{
+			text-align:center;
+			font-size:40px;
+		}
+
+		}
+		.btn {
+			position:absolute; 
+			margin-left:600px;
+		}
+		.h2{
+			display:none;
+			text-align:center;
+			font-size:40px;
+		}
+		.h3{
+			display:none;
+			text-align:center;
+			font-size:40px;
+		}
+		.h4{
+			display:none;
+			text-align:center;
+			font-size:40px;
+		}
+		.h5{
+			display:none;
+			text-align:center;
+			font-size:40px;
+		}
+		.h6{
+			display:none;
+			text-align:center;
+			font-size:40px;
+		}
+		.h7{
+			display:none;
+			text-align:center;
+			font-size:40px;
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="box1">
+			<h1 class= "h1">У тебя <span class="sum"> </span> попытки</h1>
+			<div style="margin-left:880px;width:200px;height:10px"><button class="btn"> Перемешать </button></div>
+			<h1 class= "h2">Найди Патрика</h1>
+			<h1 class= "h3">Найди Сквидварда</h1>
+			<h1 class= "h4">Найди Планктона</h1>
+			<h1 class= "h5">Найди Митера Крабса</h1>
+			<h1 class= "h6">Найди Спанч Боба</h1>
+			<h1 class= "h7">Найди Сэнди</h1>
+			<div class="box2">
+			</div>
+			<div class="box3">
+			</div>	
+			<div class="box4">
+			</div>	
+			<div class="box5">
+			</div>	
+			<div class="box6">
+			</div>
+			<div class="box7">
+			</div>		
+		</div>	
+	</div>
+
+
+	<script type="text/javascript">
+		let sum = 3;
+		let click1 = document.querySelector(".box2")
+		let click2 = document.querySelector(".box3")
+		let click3 = document.querySelector(".box4")
+		let click4 = document.querySelector(".box5")
+		let click5 = document.querySelector(".box6")
+		let click6 = document.querySelector(".box7")
+
+		document.querySelector(".btn").onclick = function(){
+				document.querySelector(".sum").innerHTML = sum
+				click3.style.left = "200px"
+				click3.style.top = "700px"
+				click1.style.left = "700px"
+				click1.style.top = "700px"
+				click2.style.left = "1200px"
+				click2.style.top = "700px"
+				click4.style.left = "700px"
+				click4.style.top = "300px"
+				click5.style.left = "200px"
+				click5.style.top = "300px"
+				click6.style.left = "1200px"
+				click6.style.top = "300px"
+				click1.style.background = "black"
+				click2.style.background = "black"
+				click3.style.background = "black"
+				click4.style.background = "black"
+				click5.style.background = "black"
+				click6.style.background = "black"
+				document.querySelector(".h2").style.display = "block";
+		}
+		click1.onclick = function(){
+			alert("Неправильно")
+			sum = sum - 1
+			document.querySelector(".sum").innerHTML = sum
+			if (sum == 0){
+				alert("Ты проиграл")
+			}
+		}
+		click2.onclick = function(){
+			alert("Неправильно")
+			sum = sum - 1
+			document.querySelector(".sum").innerHTML = sum
+			if (sum == 0){
+				alert("Ты проиграл")
+			}
+		}
+		click4.onclick = function(){
+			alert("Неправильно")
+			sum = sum - 1
+			document.querySelector(".sum").innerHTML = sum
+			if (sum == 0){
+				alert("Ты проиграл")
+			}
+		}
+		click5.onclick = function(){
+			alert("Неправильно")
+			sum = sum - 1
+			document.querySelector(".sum").innerHTML = sum
+			if (sum == 0){
+				alert("Ты проиграл")
+			}
+		}
+		click6.onclick = function(){
+			alert("Неправильно")
+			sum = sum - 1
+			document.querySelector(".sum").innerHTML = sum
+			if (sum == 0){
+				alert("Ты проиграл")
+			}
+		}
+		document.querySelector(".sum").innerHTML = sum
+		click3.onclick = function(){
+			alert("Ты победил!")
+		}
+	</script>
+</body>
+</html>
